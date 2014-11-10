@@ -55,7 +55,7 @@ fi
 
 # Otherwise, hack in my 'should always work' version
 if ! type -t __git_ps1 &> /dev/null ; then
-    source ${HOMEDIR}/bin/git-prompt.sh
+    . ./bin/git-prompt.sh
 fi
 
 if [ "$color_prompt" = yes ]; then
