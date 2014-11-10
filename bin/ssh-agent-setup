@@ -1,0 +1,5 @@
+#!/bin/bash
+for f in $HOME/.ssh/*_rsa; do
+    echo "Setting up `basename $f`"
+    ssh-add $f
+done
