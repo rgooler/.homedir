@@ -53,6 +53,11 @@ elif [ -f /etc/bash_completion ] && ! shopt -oq posix; then
   . /etc/bash_completion
 fi
 
+# Otherwise, hack in my 'should always work' version
+if ! type -t __git_ps1 &> /dev/null ; then
+    source ${HOMEDIR}/bin/git-prompt.sh
+fi
+
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -91,6 +96,8 @@ if [ -f ~/.bashrc_local ]; then
     . ~/.bashrc_local
 fi
 
+
+
 export PATH=$PATH:$HOME/bin
 export EDITOR=vim
 # set git prompt iff function exists.
@@ -106,6 +113,7 @@ if type -t __git_ps1 &> /dev/null ; then
 fi
 
 export PS1=${PS1Prefix}${GITPS1}${PS1Postfix}
+export PATH=$PATH:${HOMEDIR}/bin
 
 #Save and load history when prompt appears.
 export PROMPT_COMMAND="history -a; history -n"
