@@ -20,6 +20,8 @@ for f in $OLDPWD/*; do
     ln -s "$f" "$O" >/dev/null 2>&1
 done
 ln -s .bash_rc .bash_profile
+ln -s .bash_rc .bashrc
+ln -s .bash_rc .profile
 ln -s .vim/.vimrc .vimrc
 shopt -u dotglob
 cd - >/dev/null 2>&1
