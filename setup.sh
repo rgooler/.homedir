@@ -19,12 +19,20 @@ for f in $OLDPWD/*; do
     rm "$O" >/dev/null 2>&1
     ln -s "$f" "$O" >/dev/null 2>&1
 done
-ln -s .bashrc .bash_profile
-ln -s .bashrc .bash_rc
-ln -s .bashrc .profile
-ln -s .vim/.vimrc .vimrc
+ln -s .bashrc .bash_profile >/dev/null 2>&1
+ln -s .bashrc .bash_rc >/dev/null 2>&1
+ln -s .bashrc .profile >/dev/null 2>&1
+ln -s .vim/.vimrc .vimrc >/dev/null 2>&1
 shopt -u dotglob
 cd - >/dev/null 2>&1
 
 #Setup vim
-git clone --recursive https://github.com/rgooler/.vim 
+if [ ! -d ".vim" ]; then
+  git clone --recursive https://github.com/rgooler/.vim
+else
+  cd ~/.vim >/dev/null 2>&1
+  git submodule update --init --recursive
+  cd - >/dev/null 2>&1
+fi
+ 
+exit 0
