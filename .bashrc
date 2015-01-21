@@ -117,3 +117,4 @@ export PATH=$PATH:${HOMEDIR}/bin
 
 #Save and load history when prompt appears.
 export PROMPT_COMMAND="history -a; history -n"
+export PYTHONSTARTUP=${HOMEDIR}/.pystartup
