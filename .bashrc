@@ -96,8 +96,6 @@ if [ -f ~/.bashrc_local ]; then
     . ~/.bashrc_local
 fi
 
-
-
 export PATH=$PATH:$HOME/bin
 export EDITOR=vim
 # set git prompt iff function exists.
@@ -113,11 +111,13 @@ if type -t __git_ps1 &> /dev/null ; then
 fi
 
 export PS1=${PS1Prefix}${GITPS1}${PS1Postfix}
-export PATH=$PATH:${HOMEDIR}/bin
+export PATH=$PATH:~/bin
 
 #Save and load history when prompt appears.
 export PROMPT_COMMAND="history -a; history -n"
-export PYTHONSTARTUP=${HOMEDIR}/.pystartup
+export PYTHONSTARTUP=~/.pystartup
 
 # Allow Ruby rbenv stuff to work
-eval "$(rbenv init -)"
+if [ -f ~/.rbenv ]; then
+  eval "$(rbenv init -)"
+fi
