@@ -1,6 +1,3 @@
-[submodule ".vim"]
-	path = .vim
-	url = git@github.com:rgooler/.vim
 [submodule "bin"]
 	path = bin
 	url = git://github.com/rgooler/bin.git
