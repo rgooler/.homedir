@@ -61,14 +61,14 @@ fi
 export PATH=$PATH:$HOME/bin
 export EDITOR=vim
 # set git prompt iff function exists.
-LOCALCOLOR='\[\033[01;95m\]'
+LOCALCOLOR='\[\033[01;32m\]'
 if [[ "$SSH_CONNECTION" == "" ]]; then 
-    LOCALCOLOR='\[\033[01;32m\]'
+    LOCALCOLOR='\[\033[01;95m\]'
 fi
 
-PS1Prefix='\u@\h\[\033[1;34m\]:\[\033[1;35m\]\w\[\033[31m\]$'
+PS1Prefix='\n'${LOCALCOLOR}'\u@\h\[\033[1;34m\]:\[\033[1;35m\]\w\[\033[31m\]$'
 GITPS1=''
-PS1Postfix='\n\[\033[01;32m\]$\[\033[00m\] '
+PS1Postfix='\n'${LOCALCOLOR}'$\[\033[00m\] '
 
 if type -t __git_ps1 &> /dev/null ; then
     GITPS1='(__git_ps1 "(%s)")'
@@ -77,7 +77,7 @@ if type -t __git_ps1 &> /dev/null ; then
     GIT_PS1_SHOWCOLORHINTS=1
 fi
 
-export PS1='\n'${LOCALCOLOR}${PS1Prefix}${GITPS1}${PS1Postfix}
+export PS1=${PS1Prefix}${GITPS1}${PS1Postfix}
 export PATH=$PATH:~/bin
 
 #Save and load history when prompt appears.
