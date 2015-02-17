@@ -3,6 +3,8 @@ if [ $# -eq 0 ]; then
   echo "Syntax: git new <branch>"
   exit 1
 fi
+git checkout master
+git pull
 git branch $*
 git checkout $*
 git push --set-upstream origin $*
