@@ -33,7 +33,7 @@ fi
 
 # Otherwise, hack in my 'should always work' version
 if ! type -t __git_ps1 &> /dev/null ; then
-    . ./bin/git-prompt.sh
+    . ~/bin/git-prompt.sh
 fi
 
 # enable color support of ls and also add handy aliases
