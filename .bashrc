@@ -88,3 +88,5 @@ export PYTHONSTARTUP=~/.pystartup
 if [ -f ~/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
+
+export GOPATH=$HOME
