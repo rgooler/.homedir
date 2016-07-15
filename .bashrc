@@ -85,7 +85,7 @@ export PROMPT_COMMAND="history -a; history -n"
 export PYTHONSTARTUP=~/.pystartup
 
 # Allow Ruby rbenv stuff to work
-if [ -f ~/.rbenv ]; then
+if [ -d ~/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
