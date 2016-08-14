@@ -61,7 +61,7 @@ server {
     server_name $1;
 	
     # HSTS enable
-    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 
     # certs sent to the client in SERVER HELLO are concatenated in ssl_certificate
     ssl_certificate /etc/letsencrypt/live/$1/fullchain.pem;
