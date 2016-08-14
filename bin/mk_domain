@@ -41,7 +41,7 @@ sudo service nginx restart
 
 #Add HTTPS
 cd /opt/certbot
-sudo ./certbot-auto certonly -a webroot --webroot-path="/var/www/$1/public_html/" -d $1
+sudo ./certbot-auto certonly -a webroot --webroot-path="/var/www/$1/public_html/" -d $1 -n --no-self-upgrade
 
 sudo bash -c "cat >$OUTFILE" << EOF 
 server {
