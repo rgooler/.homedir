@@ -8,3 +8,18 @@ brew install wget tree curl tldr fish
 
 # Setup python environment
 pip install -r pip.txt
+
+mkdir -p /tmp/homedir-setup
+cd /tmp/homedir-setup
+
+# Install atom text editor
+wget https://atom.io/download/mac
+unzip mac
+rm mac
+mv Atom.app /Applications/
+
+# Install Slack
+wget https://slack.com/ssb/download-osx
+unzip download-osx
+rm download-osx
+mv Slack.app /Applications/
