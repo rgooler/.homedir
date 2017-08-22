@@ -1,0 +1,1 @@
+/Users/jippen/.config/fisherman/cmorrell.com/fish_right_prompt.fish

@@ -1,0 +1,1 @@
+/Users/jippen/.config/fisherman/docker-completion/completions/docker.fish
