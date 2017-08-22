@@ -1,0 +1,4 @@
+awscli
+virtualenv
+flake8
+requests
