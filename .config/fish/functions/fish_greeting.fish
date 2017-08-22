@@ -1,0 +1,1 @@
+/Users/jippen/.config/fisherman/scorphish/fish_greeting.fish
