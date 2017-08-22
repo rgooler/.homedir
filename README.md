@@ -18,3 +18,9 @@ To Use
     cd
     git submodule init
     git submodule update
+
+And, if on osx:
+    ./setup_osx.sh
+
+Or Ubuntu Linux
+    ./setup_ubuntu.sh
