@@ -1,0 +1,1 @@
+/Users/jippen/.config/fisherman/nvm/__nvm_run.fish

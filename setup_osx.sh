@@ -23,3 +23,7 @@ wget https://slack.com/ssb/download-osx
 unzip download-osx
 rm download-osx
 mv Slack.app /Applications/
+
+# Install npm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
