@@ -1,1 +1,1 @@
-/Users/jippen/.config/fisherman/scorphish/fish_greeting.fish
+/Users/jippen/.config/fisherman/bobthefish/fish_greeting.fish

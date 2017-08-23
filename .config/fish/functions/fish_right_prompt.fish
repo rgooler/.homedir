@@ -1,1 +1,1 @@
-/Users/jippen/.config/fisherman/scorphish/fish_right_prompt.fish
+/Users/jippen/.config/fisherman/bobthefish/fish_right_prompt.fish
