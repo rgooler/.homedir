@@ -22,5 +22,7 @@ To Use
 And, if on osx:
     ./setup_osx.sh
 
+And set iterm2 font to 12pt Roboto Mono for Powerline
+
 Or Ubuntu Linux
     ./setup_ubuntu.sh
