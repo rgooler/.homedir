@@ -23,6 +23,8 @@ done
 
 mkdir ~/.config
 ln -s ~/.homedir/.config/fish ~/.config/fish
+ln -s ~/.homedir/.config/fisher ~/.config/fisher
+ln -s ~/.homedir/.config/omf ~/.config/omf
 
 ln -s .bashrc .bash_profile >/dev/null 2>&1
 ln -s .bashrc .bash_rc >/dev/null 2>&1

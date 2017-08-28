@@ -32,5 +32,5 @@ SET fish_pager_color_description:B3A06D\x1eyellow
 SET fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SET fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SET fisher_active_prompt:bobthefish
-SET fisher_dependency_count:docker\x2dcompletion\x1edocker\x2dcompose\x1edocker\x2dfish\x2dcompletion\x1ebass\x1envm\x1episces\x1ebobthefish
+SET fisher_dependency_count:docker\x2dcompletion\x1edocker\x2dcompose\x1edocker\x2dfish\x2dcompletion\x1ebass\x1envm\x1episces\x1episces\x1ebobthefish\x1edocker\x2dfish\x2dcompletion
 SET pisces_pairs:\x28\x2c\x29\x1e\x5b\x2c\x5d\x1e\x7b\x2c\x7d\x1e\x22\x2c\x22\x1e\x27\x2c\x27

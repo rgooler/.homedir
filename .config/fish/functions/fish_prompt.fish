@@ -1,1 +1,1 @@
-/Users/jippen/.config/fisherman/bobthefish/fish_prompt.fish
+/Users/jippen/.local/share/omf/themes/bobthefish/fish_prompt.fish

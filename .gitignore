@@ -1,3 +1,4 @@
+.local/share/fish/
 *.swp
 *~
 bin/packer
