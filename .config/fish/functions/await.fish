@@ -1,0 +1,1 @@
+/home/jippen/.config/fisherman/await/functions/await.fish

@@ -1,1 +1,0 @@
-/Users/jippen/.config/fisherman/bass/functions/__bass.py

@@ -1,0 +1,1 @@
+/home/jippen/.config/fisherman/menu/menu.fish

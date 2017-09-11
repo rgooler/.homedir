@@ -1,1 +1,0 @@
-/Users/jippen/.config/fisherman/nvm/node.fish

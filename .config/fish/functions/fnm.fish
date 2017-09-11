@@ -1,0 +1,1 @@
+/home/jippen/.config/fisherman/fnm/functions/fnm.fish

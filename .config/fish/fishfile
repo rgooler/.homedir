@@ -1,6 +1,5 @@
-edc/bass
-fisherman/docker-completion
-brgmnn/fish-docker-compose
-barnybug/docker-fish-completion
-fisherman/nvm
-laughedelic/pisces
+fisherman/await
+fisherman/fnm
+fisherman/get_file_age
+fisherman/last_job_id
+fisherman/menu

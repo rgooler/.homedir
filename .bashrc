@@ -84,12 +84,11 @@ export PATH=$PATH:~/bin
 export PROMPT_COMMAND="history -a; history -n"
 export PYTHONSTARTUP=~/.pystartup
 
+export GOPATH=$HOME
+
 # Allow Ruby rbenv stuff to work
 if [ -d ~/.rbenv ]; then
-  eval "$(rbenv init -)"
+  eval "$(~/.rbenv/bin/rbenv init -)"
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 fi
-
-export GOPATH=$HOME
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
