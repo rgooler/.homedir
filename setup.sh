@@ -21,10 +21,12 @@ for f in $OLDPWD/*; do
     ln -s "$f" "$O" >/dev/null 2>&1
 done
 
-mkdir ~/.config
+mkdir -p ~/.config ~/.local/share
 ln -s ~/.homedir/.config/fish ~/.config/fish
-ln -s ~/.homedir/.config/fisher ~/.config/fisher
+ln -s ~/.homedir/.config/fisherman ~/.config/fisherman
+ln -s ~/.homedir/.config/fnm ~/.config/fnm
 ln -s ~/.homedir/.config/omf ~/.config/omf
+ln -s ~/.homedir/.local/share/fish ~/.local/share/fish
 
 ln -s .bashrc .bash_profile >/dev/null 2>&1
 ln -s .bashrc .bash_rc >/dev/null 2>&1
